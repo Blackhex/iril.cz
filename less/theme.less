@@ -1,0 +1,37 @@
+.bg-primary {
+  background-color: @primaryColor !important;
+}
+
+.btn-primary {
+  background: @accentColor;
+}
+
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover {
+  background-color: @darkAccentColor !important;
+}
+
+input[type=date]:focus:not([readonly]),
+input[type=datetime-local]:focus:not([readonly]),
+input[type=email]:focus:not([readonly]),
+input[type=number]:focus:not([readonly]),
+input[type=password]:focus:not([readonly]),
+input[type=search-md]:focus:not([readonly]),
+input[type=search]:focus:not([readonly]),
+input[type=tel]:focus:not([readonly]),
+input[type=text]:focus:not([readonly]),
+input[type=time]:focus:not([readonly]),
+input[type=url]:focus:not([readonly]),
+textarea.md-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid @lightPrimaryColor;
+  box-shadow: 0 1px 0 0 @lightPrimaryColor;
+}
+
+header a {
+  color: @navbarTextColor;
+}
+
+main {
+  padding-top: 60px;
+}
