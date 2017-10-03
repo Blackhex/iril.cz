@@ -28,10 +28,31 @@ textarea.md-textarea:focus:not([readonly]) {
   box-shadow: 0 1px 0 0 @lightPrimaryColor;
 }
 
-header a {
+.navbar.navbar-dark .breadcrumb .nav-item .nav-link,
+.navbar.navbar-dark .navbar-nav .nav-item .nav-link,
+.navbar.navbar-dark .navbar-brand {
   color: @navbarTextColor;
 }
 
-main {
-  padding-top: 60px;
+.navbar.navbar-dark .breadcrumb .nav-item .nav-link:hover,
+.navbar.navbar-dark .breadcrumb .nav-item .nav-link:focus,
+.navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover,
+.navbar.navbar-dark .navbar-nav .nav-item .nav-link:focus,
+.navbar.navbar-dark .navbar-brand:hover,
+.navbar.navbar-dark .navbar-brand:focus {
+  color: @navbarHoverTextColor;
+}
+
+.navbar.navbar-dark .breadcrumb .nav-item.active > .nav-link:hover,
+.navbar.navbar-dark .navbar-nav .nav-item.active > .nav-link:hover {
+  color: @navbarHoverTextColor;
+}
+
+.hm-white-light .mask,
+.hm-white-light .full-bg-img {
+  background-color: @overlayBackgroundColor;
+} 
+
+body {
+  color: @textPrimaryColor;
 }

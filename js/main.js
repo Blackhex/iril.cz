@@ -5,7 +5,7 @@ function reiki() {
     });
   $('nav li')
     .removeClass('active')
-  $('#reiki')
+  $('#nav-reiki')
     .addClass('active')
 }
 
@@ -16,13 +16,21 @@ function tarot() {
     });
   $('nav li')
     .removeClass('active')
-  $('#tarot')
+  $('#nav-tarot')
     .addClass('active')
 }
 
 function angels() {
   $('nav li')
     .removeClass('active')
-  $('#angels')
+  $('#nav-angels')
     .addClass('active')
+}
+
+if (window.location.hash === '#reiki') {
+  reiki();
+} else if (window.location.hash === '#tarot') {
+  tarot();
+} else if (window.location.hash === '#angels') {
+  angels();
 }
