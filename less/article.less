@@ -1,3 +1,19 @@
 .article .card-block hr {
   margin-top: 0;
 }
+
+.article .card .image {
+  max-width: 480px;
+  margin-left: @cardMargin;
+  margin-bottom: @cardMargin;
+}
+
+.article .card .image img {
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .article .card .image {
+    margin-left: 0;
+  }
+}
