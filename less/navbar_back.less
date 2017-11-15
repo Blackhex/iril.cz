@@ -1,9 +1,17 @@
-.navbar .back-btn .material-icons {
+.navbar .btn-back .material-icons {
   color: @textPrimaryColor;
   line-height: 32px;
 }
 
-.navbar .back-btn .btn-flat {
+.navbar .btn-back {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  text-align: center;
   vertical-align: middle;
-  padding: 0px 6px;
+  margin-right: 3%;
+}
+
+.navbar .btn-back:not(.btn-flat) {
+  cursor: default;
 }
