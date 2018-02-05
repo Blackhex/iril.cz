@@ -22,9 +22,9 @@ function tarot() {
 
 function angels() {
   $('link[data-id="theme"]')
-  .attr({
-    href: 'css/angels.css'
-  });
+    .attr({
+      href: 'css/angels.css'
+    });
   $('nav li')
     .removeClass('active')
   $('#nav-angels')
