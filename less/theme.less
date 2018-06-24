@@ -9,23 +9,26 @@
   background: @accentColor !important;
 }
 
-.btn-primary:active,
+.btn-primary:hover,
 .btn-primary:focus,
-.btn-primary:hover {
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:not([disabled]):not(.disabled):active,
+.btn-primary:not([disabled]):not(.disabled).active {
   background-color: @darkAccentColor !important;
 }
 
-input[type=date]:focus:not([readonly]),
-input[type=datetime-local]:focus:not([readonly]),
-input[type=email]:focus:not([readonly]),
-input[type=number]:focus:not([readonly]),
-input[type=password]:focus:not([readonly]),
-input[type=search-md]:focus:not([readonly]),
-input[type=search]:focus:not([readonly]),
-input[type=tel]:focus:not([readonly]),
-input[type=text]:focus:not([readonly]),
-input[type=time]:focus:not([readonly]),
-input[type=url]:focus:not([readonly]),
+input[type="date"]:focus:not([readonly]),
+input[type="datetime-local"]:focus:not([readonly]),
+input[type="email"]:focus:not([readonly]),
+input[type="number"]:focus:not([readonly]),
+input[type="password"]:focus:not([readonly]),
+input[type="search-md"]:focus:not([readonly]),
+input[type="search"]:focus:not([readonly]),
+input[type="tel"]:focus:not([readonly]),
+input[type="text"]:focus:not([readonly]),
+input[type="time"]:focus:not([readonly]),
+input[type="url"]:focus:not([readonly]),
 textarea.md-textarea:focus:not([readonly]) {
   border-bottom: 1px solid @lightPrimaryColor;
   box-shadow: 0 1px 0 0 @lightPrimaryColor;
@@ -51,7 +54,7 @@ textarea.md-textarea:focus:not([readonly]) {
 .hm-black-strong .mask,
 .hm-black-strong .full-bg-img {
   background-color: @overlayBackgroundColor;
-} 
+}
 
 body {
   color: @primaryTextColor;
@@ -59,6 +62,37 @@ body {
 
 footer.page-footer .footer-copyright {
   background-color: @darkPrimaryColor;
+}
+
+.btn.btn-flat {
+  padding: 1rem 1rem;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn.fa {
+  font-weight: 900 !important;
+}
+
+.btn.fa.fa-3x {
+  font-size: 3em;
+}
+
+.btn.btn-flat.fa,
+.btn.btn-flat .fa {
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+  background-color: transparent;
+}
+
+.btn.btn-flat.fa:hover,
+.btn.btn-flat.fa:focus,
+.btn.btn-flat.fa:active,
+.btn.btn-flat.fa.active,
+.btn.btn-flat .fa:hover,
+.btn.btn-flat .fa:focus .btn.btn-flat .fa:active,
+.btn.btn-flat .fa.active {
+  color: @darkAccentColor !important;
+  text-shadow: 0 5px 11px rgba(0, 0, 0, 0.18), 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .map {

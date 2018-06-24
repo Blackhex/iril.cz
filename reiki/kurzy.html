@@ -24,6 +24,9 @@
   <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="../node_modules/mdbootstrap/css/mdb.css">
 
+  <!-- OpenLayers -->
+  <link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
+
   <!-- Customizations -->
   <link data-id="theme" rel="stylesheet" type="text/css" href="../css/reiki.css">
 
@@ -52,11 +55,12 @@
           <div class="col-md-12">
             <div class="card">
               <div class="card-body">
-                <h2 class="card-title">Co je to reiki</h2>
+                <h2 class="card-title">Naše kurzy</h2>
                 <hr/>
-                <div class="image card float-right">
-                  <img src="../images/1.jpg" alt="">
-                </div>
+
+                <!-- https://mdbootstrap.com/wp-content/themes/mdbootstrap4/Tutorials/bootstrap/II-5/index.html -->
+                <div id="map" class="image card map float-right"></div>
+
                 <p class="card-text">O energii reiki již bylo napsáno hodně knih i stránek na internetu a co autor, to jiný názor. Pravda má nespočet
                   podob a zachytit univerzální pravdu do slov je velmi těžké. Reiki může být léčebná metoda, životní styl,
                   prostředek pro poznání. Může to však být i slovo, které mnohé provokuje ke strachu. Reiki je totiž univerzální
@@ -144,8 +148,10 @@
   <script type="text/javascript" src="../node_modules/popper.js/dist/umd/popper.js"></script>
   <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
   <script type="text/javascript" src="../node_modules/mdbootstrap/js/mdb.js"></script>
+  <script type="text/javascript" src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
 
   <script type="text/javascript" src="../js/main.js"></script>
+  <script type="text/javascript" src="../js/map.js"></script>
 </body>
 
 </html>
