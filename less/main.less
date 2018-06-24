@@ -1,8 +1,19 @@
 main {
-  padding-top: 6rem;
+  padding-top: @topMargin;
 }
 
 section {
   padding-bottom: @cardMargin;
 }
 
+#map {
+  width: 500px;
+  height: 400px;
+}
+
+#clanky {
+  display: block;
+  visibility: hidden;
+  position: relative;
+  top: -@topMargin;
+}
