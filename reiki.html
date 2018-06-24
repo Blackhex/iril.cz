@@ -16,13 +16,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Fonts -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <!-- Bootstrap + MD -->
     <link rel="stylesheet" href="node_modules/tether/dist/css/tether.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="node_modules/mdbootstrap/css/mdb.css">
+
+    <!-- OpenLayers -->
+    <link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
 
     <!-- Customizations -->
     <link data-id="theme" rel="stylesheet" type="text/css" href="css/reiki.css">
@@ -90,12 +93,17 @@
               TODO
             </div>
           </div>
+
+          <div class="row">
+            <!-- https://mdbootstrap.com/wp-content/themes/mdbootstrap4/Tutorials/bootstrap/II-5/index.html -->
+            <div id="map" class="card map container"></div>
         </div>
+        </section>
 
         <!-- https://mdbootstrap.com/live/_MDB4/templates/personal-blog/index.html -->
         <!-- http://v4-alpha.getbootstrap.com/components/card/#card-columns -->
         <section id="articles">
-          <div class="row articles">
+          <div class="row">
             <div class="col-md-4">
               <div class="card">
                 <div class="view overlay hm-white-slight">
@@ -207,8 +215,10 @@
     <script type="text/javascript" src="node_modules/popper.js/dist/umd/popper.js"></script>
     <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.js"></script>
+    <script type="text/javascript" src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
 
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
   </body>
 
 </html>
