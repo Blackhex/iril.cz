@@ -42,15 +42,16 @@
       <div id="navbar-content" class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
           <li id="nav-reiki" class="nav-item">
-            <a href="reiki.html" class="nav-link">Reiki
-              <span class="sr-only">(aktuální)</span>
-            </a>
+            <a href="reiki.html" class="nav-link">Reiki </a>
           </li>
           <li id="nav-angels" class="nav-item">
             <a href="andele.html" class="nav-link">Andělé</a>
           </li>
           <li id="nav-tarot" class="nav-item active">
-            <a href="tarot.html" class="nav-link">Tarot</a>
+            <a href="tarot.html" class="nav-link">
+              Tarot
+              <span class="sr-only">(aktuální)</span>
+            </a>
           </li>
           <li id="nav-massages" class="nav-item">
             <a href="masaze.html" class="nav-link">Masáže</a>
@@ -62,168 +63,187 @@
 
   <main>
     <div class="container">
-      <div class="row">
-        <div class="col-md-7">
-          <div class="view overlay hm-white-light z-depth-1-half">
-            <img src="images/tarot2.jpg" class="img-fluid " alt="">
-            <div class="mask">
-            </div>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <h2 class="h2-responsive">Reiki v našem životě</h2>
-          <h6 class="h6-responsive">
-            <i>Informační web o léčení a sebeléčení těla, duše a ducha</i>
-          </h6>
-          <hr>
-          <p>Motto dne: Každý den si připomínám svou vděčnost za život.</p>
-          <a href="" class="btn btn-primary">Napište nám</a>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-md-12">
-          <div class="card" style="height: 515px">
-            TODO
+      <section id="intro">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="view overlay hm-white-light z-depth-1-half">
+              <img src="images/tarot2.jpg" class="img-fluid " alt="">
+              <div class="mask">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <h2 class="h2-responsive">Reiki v našem životě</h2>
+            <h6 class="h6-responsive">
+              <i>Informační web o léčení a sebeléčení těla, duše a ducha</i>
+            </h6>
+            <hr>
+            <p>Motto dne: Každý den si připomínám svou vděčnost za život.</p>
+            <a href="#clanky" class="btn btn-primary">Články o tarotu</a>
+            <a href="tarot/kontakt.html" class="btn btn-primary">Napište nám</a>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- https://mdbootstrap.com/live/_MDB4/templates/personal-blog/index.html -->
-      <!-- http://v4-alpha.getbootstrap.com/components/card/#card-columns -->
-      <div class="row articles">
-        <div class="col-md-4">
-          <div class="card">
-            <div class="view overlay hm-white-slight">
-              <img src="images/1.jpg" class="img-fluid" alt="">
-              <a href="#">
-                <div class="mask"></div>
-              </a>
+      <section id="services" class="text-center">
+        <h2 class="py-3">Naše služby</h2>
+        <div class="row text-center mt-3">
+          <div class="col-md-4 offset-md-2">
+            <a class="btn btn-flat" href="tarot/kurzy.html">
+              <i class="fa fa-book fa-3x accent"></i>
+              <h5 class="font-bold mt-3">Kurzy</h5>
+              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda
+                deleniti hic.</p>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a class="btn btn-flat" href="tarot/kurzy.html">
+              <i class="fa fa-copy fa-3x accent"></i>
+              <h5 class="font-bold mt-3">Výklad karet</h5>
+              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda
+                deleniti hic.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <span id="clanky"></span>
+      <section id="articles">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="view overlay hm-white-slight">
+                <img src="images/1.jpg" class="img-fluid" alt="">
+                <a href="tarot/clanek.html">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Článek 1</h4>
+                <p class="card-text">Krátký text článku 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat volutpat suscipit.
+                  In hac habitasse platea dictumst. Sed eu est turpis. Sed augue urna, facilisis ut leo non, vehicula placerat
+                  ante. Donec eu ipsum porta neque varius pretium non nec nisi. Nunc rutrum lectus ut mi euismod egestas.
+                  Cras bibendum iaculis velit, pellentesque efficitur nulla. Maecenas ut elementum ligula&hellip;</p>
+                <a href="tarot/clanek.html" class="btn btn-primary">Přečíst více</a>
+              </div>
             </div>
-            <div class="card-body">
-              <h4 class="card-title">Článek 1</h4>
-              <p class="card-text">Krátký text článku 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat volutpat suscipit.
-                In hac habitasse platea dictumst. Sed eu est turpis. Sed augue urna, facilisis ut leo non, vehicula placerat
-                ante. Donec eu ipsum porta neque varius pretium non nec nisi. Nunc rutrum lectus ut mi euismod egestas. Cras
-                bibendum iaculis velit, pellentesque efficitur nulla. Maecenas ut elementum ligula&hellip;</p>
-              <a href="#" class="btn btn-primary">Přečíst více</a>
+            <div class="card">
+              <div class="view overlay hm-white-slight">
+                <img src="images/2.jpg" class="img-fluid" alt="">
+                <a href="tarot/clanek.html">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Článek 4</h4>
+                <p class="card-text">Krátký text článku 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat volutpat suscipit.
+                  In hac habitasse platea dictumst. Sed eu est turpis. Sed augue urna, facilisis ut leo non, vehicula placerat
+                  ante. Donec eu ipsum porta neque varius pretium non nec nisi. Nunc rutrum lectus ut mi euismod egestas&hellip;</p>
+                <a href="tarot/clanek.html" class="btn btn-primary">Přečíst více</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="view overlay hm-white-slight">
+                <img src="images/3.jpg" class="img-fluid" alt="">
+                <a href="tarot/clanek.html">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Článek 7</h4>
+                <p class="card-text">Krátký text článku 7. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat volutpat suscipit.
+                  In hac habitasse platea dictumst. Sed eu est turpis. Sed augue urna, facilisis ut leo non, vehicula placerat
+                  ante. Donec eu ipsum porta neque varius pretium non nec nisi. Nunc rutrum lectus ut mi euismod egestas.
+                  Cras bibendum iaculis velit, pellentesque efficitur nulla. Maecenas ut elementum ligula&hellip;</p>
+                <a href="tarot/clanek.html" class="btn btn-primary">Přečíst více</a>
+              </div>
             </div>
           </div>
-          <div class="card">
-            <div class="view overlay hm-white-slight">
-              <img src="images/2.jpg" class="img-fluid" alt="">
-              <a href="#">
-                <div class="mask"></div>
-              </a>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="view overlay hm-white-slight">
+                <img src="images/4.jpg" class="img-fluid" alt="">
+                <a href="tarot/clanek.html">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Článek 2</h4>
+                <p class="card-text">Krátký text článku 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat volutpat suscipit.
+                  In hac habitasse platea dictumst. Sed eu est turpis. Sed augue urna, facilisis ut leo non, vehicula placerat
+                  ante. Donec eu ipsum porta neque varius pretium non nec nisi. Nunc rutrum lectus ut mi euismod egestas&hellip;</p>
+                <a href="tarot/clanek.html" class="btn btn-primary">Přečíst více</a>
+              </div>
             </div>
-            <div class="card-body">
-              <h4 class="card-title">Článek 4</h4>
-              <p class="card-text">Krátký text článku 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat volutpat suscipit.
-                In hac habitasse platea dictumst. Sed eu est turpis. Sed augue urna, facilisis ut leo non, vehicula placerat
-                ante. Donec eu ipsum porta neque varius pretium non nec nisi. Nunc rutrum lectus ut mi euismod egestas&hellip;</p>
-              <a href="#" class="btn btn-primary">Přečíst více</a>
+            <div class="card">
+              <div class="view overlay hm-white-slight">
+                <img src="images/5.jpg" class="img-fluid" alt="">
+                <a href="tarot/clanek.html">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Článek 5</h4>
+                <p class="card-text">Krátký text článku 5. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat volutpat suscipit.
+                  In hac habitasse platea dictumst. Sed eu est turpis. Sed augue urna, facilisis ut leo non, vehicula placerat
+                  ante. Donec eu ipsum porta neque varius pretium non nec nisi. Nunc rutrum lectus ut mi euismod egestas.
+                  Cras bibendum iaculis velit, pellentesque efficitur nulla. Maecenas ut elementum ligula&hellip;</p>
+                <a href="tarot/clanek.html" class="btn btn-primary">Přečíst více</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="view overlay hm-white-slight">
+                <img src="images/6.jpg" class="img-fluid" alt="">
+                <a href="tarot/clanek.html">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Článek 8</h4>
+                <p class="card-text">Krátký text článku 8. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat volutpat suscipit.
+                  In hac habitasse platea dictumst. Sed eu est turpis. Sed augue urna, facilisis ut leo non, vehicula placerat
+                  ante. Donec eu ipsum porta neque varius pretium non nec nisi&hellip;</p>
+                <a href="tarot/clanek.html" class="btn btn-primary">Přečíst více</a>
+              </div>
             </div>
           </div>
-          <div class="card">
-            <div class="view overlay hm-white-slight">
-              <img src="images/3.jpg" class="img-fluid" alt="">
-              <a href="#">
-                <div class="mask"></div>
-              </a>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="view overlay hm-white-slight">
+                <img src="images/7.jpg" class="img-fluid" alt="">
+                <a href="tarot/clanek.html">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Článek 3</h4>
+                <p class="card-text">Krátký text článku 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat volutpat suscipit.
+                  In hac habitasse platea dictumst. Sed eu est turpis. Sed augue urna, facilisis ut leo non, vehicula placerat
+                  ante. Donec eu ipsum porta neque varius pretium non nec nisi. Nunc rutrum lectus ut mi euismod egestas.
+                  Cras bibendum iaculis velit, pellentesque efficitur nulla. Maecenas ut elementum ligula&hellip;</p>
+                <a href="tarot/clanek.html" class="btn btn-primary">Přečíst více</a>
+              </div>
             </div>
-            <div class="card-body">
-              <h4 class="card-title">Článek 7</h4>
-              <p class="card-text">Krátký text článku 7. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat volutpat suscipit.
-                In hac habitasse platea dictumst. Sed eu est turpis. Sed augue urna, facilisis ut leo non, vehicula placerat
-                ante. Donec eu ipsum porta neque varius pretium non nec nisi. Nunc rutrum lectus ut mi euismod egestas. Cras
-                bibendum iaculis velit, pellentesque efficitur nulla. Maecenas ut elementum ligula&hellip;</p>
-              <a href="#" class="btn btn-primary">Přečíst více</a>
+            <div class="card">
+              <div class="view overlay hm-white-slight">
+                <img src="images/8.jpg" class="img-fluid" alt="">
+                <a href="tarot/clanek.html">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Článek 7</h4>
+                <p class="card-text">Krátký text článku 7. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat volutpat suscipit.
+                  In hac habitasse platea dictumst. Sed eu est turpis. Sed augue urna, facilisis ut leo non, vehicula placerat
+                  ante. Donec eu ipsum porta neque varius pretium non nec nisi. Nunc rutrum lectus ut mi euismod egestas.
+                  Cras bibendum iaculis velit, pellentesque efficitur nulla. Maecenas ut elementum ligula&hellip;</p>
+                <a href="tarot/clanek.html" class="btn btn-primary">Přečíst více</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="view overlay hm-white-slight">
-              <img src="images/4.jpg" class="img-fluid" alt="">
-              <a href="#">
-                <div class="mask"></div>
-              </a>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Článek 2</h4>
-              <p class="card-text">Krátký text článku 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat volutpat suscipit.
-                In hac habitasse platea dictumst. Sed eu est turpis. Sed augue urna, facilisis ut leo non, vehicula placerat
-                ante. Donec eu ipsum porta neque varius pretium non nec nisi. Nunc rutrum lectus ut mi euismod egestas&hellip;</p>
-              <a href="#" class="btn btn-primary">Přečíst více</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="view overlay hm-white-slight">
-              <img src="images/5.jpg" class="img-fluid" alt="">
-              <a href="#">
-                <div class="mask"></div>
-              </a>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Článek 5</h4>
-              <p class="card-text">Krátký text článku 5. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat volutpat suscipit.
-                In hac habitasse platea dictumst. Sed eu est turpis. Sed augue urna, facilisis ut leo non, vehicula placerat
-                ante. Donec eu ipsum porta neque varius pretium non nec nisi. Nunc rutrum lectus ut mi euismod egestas. Cras
-                bibendum iaculis velit, pellentesque efficitur nulla. Maecenas ut elementum ligula&hellip;</p>
-              <a href="#" class="btn btn-primary">Přečíst více</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="view overlay hm-white-slight">
-              <img src="images/6.jpg" class="img-fluid" alt="">
-              <a href="#">
-                <div class="mask"></div>
-              </a>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Článek 8</h4>
-              <p class="card-text">Krátký text článku 8. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat volutpat suscipit.
-                In hac habitasse platea dictumst. Sed eu est turpis. Sed augue urna, facilisis ut leo non, vehicula placerat
-                ante. Donec eu ipsum porta neque varius pretium non nec nisi&hellip;</p>
-              <a href="#" class="btn btn-primary">Přečíst více</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="view overlay hm-white-slight">
-              <img src="images/7.jpg" class="img-fluid" alt="">
-              <a href="#">
-                <div class="mask"></div>
-              </a>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Článek 3</h4>
-              <p class="card-text">Krátký text článku 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat volutpat suscipit.
-                In hac habitasse platea dictumst. Sed eu est turpis. Sed augue urna, facilisis ut leo non, vehicula placerat
-                ante. Donec eu ipsum porta neque varius pretium non nec nisi. Nunc rutrum lectus ut mi euismod egestas. Cras
-                bibendum iaculis velit, pellentesque efficitur nulla. Maecenas ut elementum ligula&hellip;</p>
-              <a href="#" class="btn btn-primary">Přečíst více</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="view overlay hm-white-slight">
-              <img src="images/8.jpg" class="img-fluid" alt="">
-              <a href="#">
-                <div class="mask"></div>
-              </a>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Článek 7</h4>
-              <p class="card-text">Krátký text článku 7. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat volutpat suscipit.
-                In hac habitasse platea dictumst. Sed eu est turpis. Sed augue urna, facilisis ut leo non, vehicula placerat
-                ante. Donec eu ipsum porta neque varius pretium non nec nisi. Nunc rutrum lectus ut mi euismod egestas. Cras
-                bibendum iaculis velit, pellentesque efficitur nulla. Maecenas ut elementum ligula&hellip;</p>
-              <a href="#" class="btn btn-primary">Přečíst více</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
   </main>
 
@@ -262,7 +282,8 @@
     </div>
 
     <div class="footer-copyright text-center py-3">
-      © Copyright 2004-2018 <a href="http://iril.cz">IRIL</a>. Všechna práva vyhrazena.
+      © Copyright 2004-2018
+      <a href="http://iril.cz">IRIL</a>. Všechna práva vyhrazena.
     </div>
   </footer>
 
