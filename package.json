@@ -5,10 +5,11 @@
   "description": "IRIL - Reiki v našem životě a reiki kurzy v regionech Brno a Tábor",
   "main": "index.html",
   "dependencies": {
-    "bootstrap": "^4.1.1",
+    "bootstrap": "^4.1.2",
     "daemonite-material": "^4.1.1",
     "jquery": "3.2.1",
-    "mdbootstrap": "^4.5.5",
+    "mdbootstrap": "^4.5.7",
+    "pickadate": "^3.5.6",
     "popper.js": "^1.14.3",
     "tether": "1.4.0"
   },
