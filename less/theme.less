@@ -1,7 +1,7 @@
 @import url("fab.less");
 @import url("navbar_back.less");
-
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -18,15 +18,15 @@ footer {
 }
 
 .bg-primary {
-  background-color: @primaryColor !important;
+  background-color: @primaryColor  !important;
 }
 
 .bg-primary.accent-2 {
-  background-color: @darkPrimaryColor !important;
+  background-color: @darkPrimaryColor  !important;
 }
 
 .btn-primary {
-  background: @accentColor !important;
+  background: @accentColor  !important;
 }
 
 .btn-primary:hover,
@@ -35,7 +35,7 @@ footer {
 .btn-primary.active,
 .btn-primary:not([disabled]):not(.disabled):active,
 .btn-primary:not([disabled]):not(.disabled).active {
-  background-color: @darkAccentColor !important;
+  background-color: @darkAccentColor  !important;
 }
 
 input[type="date"]:focus:not([readonly]),
@@ -66,8 +66,8 @@ textarea.md-textarea:focus:not([readonly]) {
   color: @textSecondaryColor;
 }
 
-.navbar.navbar-dark .breadcrumb .nav-item.active > .nav-link:hover,
-.navbar.navbar-dark .navbar-nav .nav-item.active > .nav-link:hover {
+.navbar.navbar-dark .breadcrumb .nav-item.active>.nav-link:hover,
+.navbar.navbar-dark .navbar-nav .nav-item.active>.nav-link:hover {
   color: @textSecondaryColor;
 }
 
@@ -111,7 +111,38 @@ footer.page-footer .footer-copyright {
 .btn.btn-flat .fa:hover,
 .btn.btn-flat .fa:focus .btn.btn-flat .fa:active,
 .btn.btn-flat .fa.active {
-  color: @darkAccentColor !important;
+  color: @darkAccentColor  !important;
   text-shadow: 0 5px 11px rgba(0, 0, 0, 0.18), 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
+.md-form input[type=text]:focus:not([readonly])+label,
+.md-form input[type=password]:focus:not([readonly])+label,
+.md-form input[type=email]:focus:not([readonly])+label,
+.md-form input[type=url]:focus:not([readonly])+label,
+.md-form input[type=time]:focus:not([readonly])+label,
+.md-form input[type=date]:focus:not([readonly])+label,
+.md-form input[type=datetime-local]:focus:not([readonly])+label,
+.md-form input[type=tel]:focus:not([readonly])+label,
+.md-form input[type=number]:focus:not([readonly])+label,
+.md-form input[type=search-md]:focus:not([readonly])+label,
+.md-form input[type=search]:focus:not([readonly])+label,
+.md-form textarea.md-textarea:focus:not([readonly])+label {
+  color: @darkAccentColor;
+}
+
+.md-form input[type=text]:focus:not([readonly]),
+.md-form input[type=password]:focus:not([readonly]),
+.md-form input[type=email]:focus:not([readonly]),
+.md-form input[type=url]:focus:not([readonly]),
+.md-form input[type=time]:focus:not([readonly]),
+.md-form input[type=date]:focus:not([readonly]),
+.md-form input[type=datetime-local]:focus:not([readonly]),
+.md-form input[type=tel]:focus:not([readonly]),
+.md-form input[type=number]:focus:not([readonly]),
+.md-form input[type=search-md]:focus:not([readonly]),
+.md-form input[type=search]:focus:not([readonly]),
+.md-form textarea.md-textarea:focus:not([readonly]) {
+  -webkit-box-shadow: 0 1px 0 0 @darkAccentColor;
+  box-shadow: 0 1px 0 0 @darkAccentColor;
+  border-bottom: 1px solid @darkAccentColor;
+}
