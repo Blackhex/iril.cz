@@ -31,10 +31,14 @@ function angels() {
     .addClass('active')
 }
 
-if (window.location.hash === '#reiki') {
-  reiki();
-} else if (window.location.hash === '#tarot') {
-  tarot();
-} else if (window.location.hash === '#angels') {
-  angels();
-}
+window.onload = function () {
+  if (window.location.hash === '#reiki') {
+    reiki();
+  } else if (window.location.hash === '#tarot') {
+    tarot();
+  } else if (window.location.hash === '#angels') {
+    angels();
+  } else if (window.location.pathname == "/reiki/kurzy_brno.html") {
+    selectPlace("brno")
+  }
+};

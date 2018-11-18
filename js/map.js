@@ -27,13 +27,42 @@ var placesStyle = new ol.style.Style({
   })
 });
 
+var selectedPlacesStyle = new ol.style.Style({
+  image: new ol.style.Circle({
+    fill: new ol.style.Fill({
+      color: navbarColor
+    }),
+    radius: 15,
+  })
+});
+
+var placesSource = new ol.source.Vector({
+  url: '../json/places.geo.json',
+  format: new ol.format.GeoJSON()
+})
 var placesLayer = new ol.layer.Vector({
-  source: new ol.source.Vector({
-    url: '../json/places.geo.json',
-    format: new ol.format.GeoJSON()
-  }),
+  source: placesSource,
   style: placesStyle
 })
+
+var placesLoaded = false
+var onPlacesLoaded = placesSource.on('change', function() {
+  if (placesSource.getState() == 'ready') {
+    ol.Observable.unByKey(onPlacesLoaded);
+    placesLoaded = true
+  }
+});
+
+var selectPlaceInteraction = new ol.interaction.Select({
+  layers: function (layer) {
+    return layer === placesLayer
+  },
+  style: selectedPlacesStyle
+});
+
+selectPlaceInteraction.on('select', function (event) {
+  window.location = event.selected[0].getProperties()['link']
+});
 
 var map = new ol.Map({
   target: 'map',
@@ -45,7 +74,9 @@ var map = new ol.Map({
     center: ol.proj.fromLonLat([16.2, 49.7]),
     zoom: 8
   }),
-  interactions: [],
+  interactions: [
+    selectPlaceInteraction
+  ],
   controls: [],
 });
 
@@ -56,3 +87,22 @@ map.getView()
   .fit(extent, {
     constrainResolution: false
   })
+
+function selectPlace(id) {  
+  if (placesLoaded) {
+    doSelectPlace(id)
+  } else {
+    var onPlacesLoaded = placesSource.on('change', function() {
+      if (placesLoaded) {
+        ol.Observable.unByKey(onPlacesLoaded);
+        doSelectPlace(id)
+      }
+    });
+  }  
+}
+
+function doSelectPlace(id) {
+  var feature = placesSource.getFeatureById(id)
+  selectPlaceInteraction.getFeatures().clear()
+  selectPlaceInteraction.getFeatures().push(feature)
+}
