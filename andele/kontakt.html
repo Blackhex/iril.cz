@@ -58,29 +58,31 @@
                   <div class="col-md-9 mb-md-0 mb-5">
 
                     <form id="contact-form" name="contact-form" action="" method="POST">
-                      <div class="row">
+                      <div class="form-row">
                         <div class="col-md-6">
                           <div class="md-form mb-0">
                             <input type="text" id="name" name="name" class="form-control">
-                            <label for="name" class="">Vaše jméno</label>
+                            <label for="name">Vaše jméno</label>
                           </div>
                         </div>
                         <div class="col-md-6">
                           <div class="md-form mb-0">
                             <input type="text" id="email" name="email" class="form-control">
-                            <label for="email" class="">Váš e-mail</label>
+                            <label for="email">Váš e-mail*</label>
                           </div>
                         </div>
                       </div>
-                      <div class="row">
+                      <div class="form-row">
                         <div class="col-md-12">
                           <div class="md-form">
                             <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                            <label for="message">Vaše zpráva</label>
+                            <label for="message">Vaše zpráva*</label>
                           </div>
                         </div>
                       </div>
                     </form>
+
+                    <p>* Povinná pole</p>
 
                     <div class="text-center text-md-left">
                       <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Odeslat</a>

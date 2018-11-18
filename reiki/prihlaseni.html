@@ -25,7 +25,7 @@
   <link rel="stylesheet" type="text/css" href="../node_modules/mdbootstrap/css/mdb.css">
 
   <!-- Customizations -->
-  <link data-id="theme" rel="stylesheet" type="text/css" href="../css/massages.css">
+  <link data-id="theme" rel="stylesheet" type="text/css" href="../css/reiki.css">
 
   <title>IRIL - Reiki v našem životě a reiki kurzy v regionech Brno a Tábor</title>
 </head>
@@ -33,7 +33,7 @@
 <body class="article fixed-sn">
   <header>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-      <a class="btn-back btn-flat btn-md waves-effect waves-light" href="../masaze.html">
+      <a class="btn-back btn-flat btn-md waves-effect waves-light" href="../reiki.html">
         <i class="material-icons md-24">arrow_back</i>
       </a>
       <a class="navbar-brand" href="../landing.html">Sdružení IRIL</a>
@@ -52,7 +52,7 @@
           <div class="col-md-12">
             <div class="card">
               <div class="card-body">
-                <h2 class="card-title">Napište nám</h2>
+                <h2 class="card-title">Přihlášení na kurz: Masáže lávovými kameny</h2>
                 <hr/>
                 <div class="row">
                   <div class="col-md-9 mb-md-0 mb-5">
@@ -73,16 +73,44 @@
                         </div>
                       </div>
                       <div class="form-row">
+                        <div class="col-md-6">
+                          <div class="md-form mb-0">
+                            <!--<select id="term" name="term" class="mdb-select">
+                              <option selected disabled>Termín</option>
+                              <option value="1">15.11.2019 15:00</option>
+                              <option value="2">15.11.2019 17:00</option>
+                              <option value="3">30.12.2019 15:00</option>
+                            </select>-->
+
+                            <div class="dropdown">
+                              <input type="text" id="term" name="term" class="form-control dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <label for="email">Termín*</label>
+                              <div class="dropdown-menu" aria-labelledby="term">
+                                <button class="dropdown-item" type="button">15.11.2019 15:00</button>
+                                <button class="dropdown-item" type="button">15.11.2019 17:00</button>
+                                <button class="dropdown-item" type="button">30.12.2019 15:00</button>
+                              </div>
+                            </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="md-form mb-0">
+                            <input type="text" id="phone" name="phone" class="form-control">
+                            <label for="phone">Váš telefon</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-row">
                         <div class="col-md-12">
                           <div class="md-form">
                             <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                            <label for="message">Vaše zpráva*</label>
+                            <label for="message">Poznámka</label>
                           </div>
                         </div>
                       </div>
                     </form>
 
-                   <p>* Povinná pole</p>
+                    <p>* Povinná pole</p>
 
                     <div class="text-center text-md-left">
                       <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Odeslat</a>
@@ -93,9 +121,9 @@
                   <div class="col-md-3 text-center">
                     <ul class="list-unstyled mb-0">
                       <li>
-                        <a class="btn btn-flat" target="_blank" href="maito:masaze@iril.cz">
+                        <a class="btn btn-flat" target="_blank" href="maito:reiki@iril.cz">
                           <i class="fa fa-envelope fa-2x accent"></i>
-                          <p class="font-bold mt-2 mb-0">masaze@iril.cz</p>
+                          <p class="font-bold mt-2 mb-0">reiki@iril.cz</p>
                         </a>
                       </li>
                       <li>
