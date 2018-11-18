@@ -58,6 +58,7 @@ textarea.md-textarea:focus:not([readonly]) {
 .navbar.navbar-dark .navbar-nav .nav-item .nav-link,
 .navbar.navbar-dark .navbar-brand {
   color: @textPrimaryColor;
+  font-size: @menuFontSize;
 }
 
 .navbar.navbar-dark .breadcrumb .nav-item .nav-link:hover,
@@ -82,6 +83,40 @@ body {
 
 footer.page-footer .footer-copyright {
   background-color: @darkPrimaryColor;
+}
+
+.h1-responsive {
+  font-size: 200%;
+}
+
+@media (min-width: 576px) {
+  .h1-responsive {
+      font-size: 250%;
+  }
+}
+@media (min-width: 768px) {
+  .h1-responsive {
+    font-size: 300%;
+  }
+}
+@media (min-width: 992px) {
+  .h1-responsive {
+    font-size: 350%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .h1-responsive {
+    font-size: 400%;
+  }
+}
+
+.btn {
+  font-size: @buttonFontSize;
+}
+
+.btn.btn-lg {
+  font-size: @largeButtonFontSize;
 }
 
 .btn.btn-flat {
