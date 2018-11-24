@@ -26,6 +26,12 @@
     "simple-autoreload-server": ">=0.2.7"
   },
   "scripts": {
+    "build_landing": "lessc less/landing.less css/landing.css",
+    "build_reiki": "lessc less/reiki.less css/reiki.css",
+    "build_angels": "lessc less/angels.less css/angels.css",
+    "build_tarot": "lessc less/tarot.less css/tarot.css",
+    "build_massages": "lessc less/massages.less css/massages.css",
+    "build": "npm run build_landing && npm run build_reiki && npm run build_angels && npm run build_tarot && npm run build_massages",
     "start": "autoreload-server . 8080"
   },
   "author": "Radek Bartoň"
