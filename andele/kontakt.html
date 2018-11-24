@@ -2,8 +2,8 @@
 <html lang="cs">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="googlebot" content="noodp" />
   <meta name="robots" content="index, follow" />
   <meta name="keywords" content="kurzy, reiki, energie" />
@@ -11,19 +11,27 @@
   <meta name="author" content="IRIL" />
   <meta name="distribution" content="Global" />
   <meta name="revisit-after" content="2 days" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- For LESS develompment only -->
+  <link rel="stylesheet/less" type="text/css" href="../less/angels.less" />
+  <script src="../node_modules/less/dist/less.js"></script>
+  <script>
+    less.env = "development";
+    less.watch();
+  </script>
 
   <!-- Fonts -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
   <!-- Bootstrap + MD -->
-  <link rel="stylesheet" href="../node_modules/tether/dist/css/tether.css">
-  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="../node_modules/mdbootstrap/css/mdb.css">
+  <link rel="stylesheet" href="../node_modules/tether/dist/css/tether.css" />
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="../node_modules/mdbootstrap/css/mdb.css" />
 
   <!-- Customizations -->
-  <link data-id="theme" rel="stylesheet" type="text/css" href="../css/angels.css">
+  <link data-id="theme" rel="stylesheet" type="text/css" href="../css/angels.css" />
 
   <title>IRIL - Reiki v našem životě a reiki kurzy v regionech Brno a Tábor</title>
 </head>
@@ -39,6 +47,8 @@
         aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <div id="navbar-content" class="collapse navbar-collapse">
+      </div>
     </nav>
   </header>
 
@@ -55,7 +65,7 @@
                 <div class="row">
                   <div class="col-md-9 mb-md-0 mb-5">
 
-                    <form id="contact-form" name="contact-form" action="" method="POST">
+                    <form id="contact-form" name="contact-form" action="../andele.html" method="get">
                       <div class="form-row">
                         <div class="col-md-6">
                           <div class="md-form mb-0">
@@ -73,7 +83,7 @@
                       <div class="form-row">
                         <div class="col-md-12">
                           <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <textarea id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
                             <label for="message">Vaše zpráva*</label>
                           </div>
                         </div>
@@ -91,21 +101,15 @@
                   <div class="col-md-3 text-center">
                     <ul class="list-unstyled mb-0">
                       <li>
-                        <a class="btn btn-flat" target="_blank" href="maito:andele@iril.cz">
+                        <a class="btn btn-flat" target="_blank" href="maito:iva@iril.cz">
                           <i class="fa fa-envelope fa-2x accent"></i>
-                          <p class="font-bold mt-2 mb-0">andele@iril.cz</p>
+                          <p class="font-bold mt-2 mb-0">iva@iril.cz</p>
                         </a>
                       </li>
                       <li>
                         <a class="btn btn-flat" target="_blank" href="tel:+420723456720">
                           <i class="fa fa-phone fa-2x accent"></i>
                           <p class="font-bold mt-2 mb-0">+420&nbsp;723&nbsp;456&nbsp;720</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="btn btn-flat" target="_blank" href="http://maps.google.com/?daddr=Křížová 15, 603 00, Brno">
-                          <i class="fa fa-map-marker fa-2x accent"></i>
-                          <p class="font-bold mt-2 mb-0">Sdružení IRIL, Křížová&nbsp;15, 603&nbsp;00, Brno</p>
                         </a>
                       </li>
                     </ul>
