@@ -14,15 +14,16 @@
     "tether": ">=1.4.5"
   },
   "devDependencies": {
-    "simple-autoreload-server": ">=0.2.7",
     "connect": ">=3.6.6",
-    "fresh": ">=0.5.2",
-    "qs": ">=6.5.2",
-    "negotiator": ">=0.6.1",
     "cookie-signature": ">=1.1.0",
-    "send": ">=0.16.2",
+    "debug": ">=4.1.0",
+    "fresh": ">=0.5.2",
+    "less": ">=3.8.1",
     "mime": ">=2.3.1",
-    "debug": ">=4.1.0"
+    "negotiator": ">=0.6.1",
+    "qs": ">=6.5.2",
+    "send": ">=0.16.2",
+    "simple-autoreload-server": ">=0.2.7"
   },
   "scripts": {
     "start": "autoreload-server . 8080"
