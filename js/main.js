@@ -38,7 +38,7 @@ window.onload = function () {
     tarot();
   } else if (window.location.hash === '#angels') {
     angels();
-  } else if (window.location.pathname == "/reiki/kurzy_brno.html") {
+  } else if (window.location.pathname.endsWith("brno.html")) {
     selectPlace("brno")
   }
 };
