@@ -31,7 +31,7 @@ function angels() {
     .addClass('active')
 }
 
-window.onload = function () {
+$(document).ready(function () {
   if (window.location.hash === '#reiki') {
     reiki();
   } else if (window.location.hash === '#tarot') {
@@ -39,6 +39,6 @@ window.onload = function () {
   } else if (window.location.hash === '#angels') {
     angels();
   } else if (window.location.pathname.endsWith("brno.html")) {
-    selectPlace("brno")
+    window.selectedPlace = "brno";
   }
-};
+});

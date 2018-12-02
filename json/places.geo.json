@@ -1,11 +1,12 @@
 {
   "type": "FeatureCollection",
-  "features": [
-    {
+  "features": [{
       "type": "Feature",
       "id": "brno",
       "properties": {
-        "link": "kurzy_brno.html"
+        "link": "kurzy_brno.html",
+        "popup-title": "Brno",
+        "popup-text": "<p>Reiki mistryně Iva&nbsp;Janíčková,<br/> Křížová 15,<br/> tel. 723 456 720,<br/> <a href=\"mailto:iva@iril.cz\">iva@iril.cz</a></p>"
       },
       "geometry": {
         "type": "Point",
@@ -19,7 +20,9 @@
       "type": "Feature",
       "id": "sezimovo_usti",
       "properties": {
-        "link": "kurzy_brno.html"
+        "link": "kurzy_brno.html",
+        "popup-title": "Sezimovo Ústí",
+        "popup-text": "<p>Reiki mistryně Libuše&nbsp;Sommerová,<br/> Táboritů 601,<br/> tel. 775 204 649,<br/> <a href=\"mailto:libuse.sommerova@gmail.com\">libuse.sommerova@gmail.com</a></p>"
       },
       "geometry": {
         "type": "Point",
@@ -33,7 +36,9 @@
       "type": "Feature",
       "id": "velka_bites",
       "properties": {
-        "link": "kurzy_brno.html"
+        "link": "kurzy_brno.html",
+        "popup-title": "Velká Bíteš",
+        "popup-text": "<p>Reiki mistryně Mgr.&nbsp;Jana&nbsp;Dvořáčková,<br/> Záblatí 52,<br/> tel. 777 807 185,<br/> <a href=\"mailto:mgr.dvorackova@email.cz\">mgr.dvorackova@email.cz</a></p>"
       },
       "geometry": {
         "type": "Point",
