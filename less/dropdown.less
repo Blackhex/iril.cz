@@ -1,0 +1,45 @@
+.btn-primary.dropdown-toggle {
+  background-color: @accentColor  !important;
+}
+
+.btn-primary.dropdown-toggle:hover,
+.btn-primary.dropdown-toggle:focus {
+  background-color: @darkAccentColor  !important;
+}
+
+.btn-primary:not([disabled]):not(.disabled):active,
+.btn-primary:not([disabled]):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+  background-color: @darkAccentColor  !important;
+}
+
+.dropdown .dropdown-menu,
+.dropleft .dropdown-menu,
+.dropright .dropdown-menu,
+.dropup .dropdown-menu {
+  padding: 0.5rem;
+}
+
+.dropdown .dropdown-menu .dropdown-item,
+.dropleft .dropdown-menu .dropdown-item,
+.dropright .dropdown-menu .dropdown-item,
+.dropup .dropdown-menu .dropdown-item {
+  padding: 0.5rem;
+  margin-left: 0;
+  font-size: .9rem;
+}
+
+.dropdown .dropdown-menu.dropdown-primary .dropdown-item:active,
+.dropdown .dropdown-menu.dropdown-primary .dropdown-item:hover,
+.dropleft .dropdown-menu.dropdown-primary .dropdown-item:active,
+.dropleft .dropdown-menu.dropdown-primary .dropdown-item:hover,
+.dropright .dropdown-menu.dropdown-primary .dropdown-item:active,
+.dropright .dropdown-menu.dropdown-primary .dropdown-item:hover,
+.dropup .dropdown-menu.dropdown-primary .dropdown-item:active,
+.dropup .dropdown-menu.dropdown-primary .dropdown-item:hover {
+  background-color: @darkAccentColor  !important;
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+  -webkit-border-radius: 0.125rem;
+  border-radius: 0.125rem;
+}

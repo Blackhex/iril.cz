@@ -81,23 +81,14 @@
                       </div>
                       <div class="form-row">
                         <div class="col-md-6">
-                          <div class="md-form mb-0">
-                            <!--<select id="term" name="term" class="mdb-select">
-                              <option selected disabled>Termín</option>
-                              <option value="1">15.11.2019 15:00</option>
-                              <option value="2">15.11.2019 17:00</option>
-                              <option value="3">30.12.2019 15:00</option>
-                            </select>-->
-
-                            <div class="dropdown">
-                              <input type="text" role="combobox" id="term" name="term" class="form-control dropdown-toggle"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <label for="email">Termín*</label>
-                              <div class="dropdown-menu" aria-labelledby="term">
-                                <button class="dropdown-item" type="button">15.11.2019 15:00</button>
-                                <button class="dropdown-item" type="button">15.11.2019 17:00</button>
-                                <button class="dropdown-item" type="button">30.12.2019 15:00</button>
-                              </div>
+                          <div class="md-form mb-0 dropdown">
+                            <input type="text" role="combobox" id="term" name="term" class="form-control dropdown-toggle"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <label for="email">Termín*</label>
+                            <div class="dropdown-menu dropdown-primary" aria-labelledby="term">
+                              <button class="dropdown-item" type="button">15.11.2019 15:00</button>
+                              <button class="dropdown-item" type="button">15.11.2019 17:00</button>
+                              <button class="dropdown-item" type="button">30.12.2019 15:00</button>
                             </div>
                           </div>
                         </div>
@@ -205,6 +196,7 @@
   <script src="../node_modules/mdbootstrap/js/mdb.js"></script>
 
   <script src="../js/main.js"></script>
+  <script src="../js/dropdown.js"></script>
 </body>
 
 </html>
